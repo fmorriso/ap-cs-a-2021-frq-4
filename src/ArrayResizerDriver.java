@@ -1,7 +1,11 @@
+/**
+ * AP CS A - 2021 - FRQ #4
+ * Created By: Frederick Morrison
+ * Creation Date: 2023-04-27
+ */
+
 import java.util.Arrays;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class ArrayResizerDriver
 {
     public static void main(String[] args)

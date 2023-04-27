@@ -1,9 +1,15 @@
+/**
+ * AP CS A - 2021 - FRQ #4
+ * Created By: Frederick Morrison
+ * Creation Date: 2023-04-27
+ */
+
 public class ArrayResizer {
     
     /**
      * Inspects every column in row "r" of array2D to determne if every
      * value is non-zero.
-     * @param array2D - a two dimensional array of integers.
+     * @param array2D - a two-dimensional array of integers.
      * @param r - a row index within array2D
      * @precondition - r is a valid row index in array2D
      * @postcondition - array2D is unchanged
