@@ -18,4 +18,39 @@ public class ArrayResizer {
         }
         return true;
     }
+
+    public static int numNonZeroRows(int[] [] array2D)
+    {
+        int n = 0;
+        for(int r = 0; r < array2D.length; r++)
+        {
+            if(isNonZeroRow(array2D, r)) n++;
+        }
+        return n;
+    }
+
+    /**
+     * Removes rows from a two-dimensional array that have any column values of zero.
+     * @param array2D
+     * @return - a two-dimensional array containing only rows from array2D with all non-zero rows
+     * @precondition - array2D contains AT LEAST ONE column and AT LEAST ONE ROW with no zeros.
+     * @postcondition - array2D is unchanged.
+     */
+    public static int[][] resize(int[][] array2D)
+    {
+        int size = numNonZeroRows(array2D);
+        int[][] arr = new int[size][array2D[0].length];
+        int row = 0;
+        for(int r = 0; r < array2D.length; r++)
+        {
+            if(isNonZeroRow(array2D, r)) {
+                for(int c = 0; c < array2D[0].length; c++ )
+                {
+                    arr[row][c] = array2D[r][c];
+                }
+                row++;
+            }
+        }
+        return arr;
+    }
 }
